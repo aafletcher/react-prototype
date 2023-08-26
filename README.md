@@ -1,4 +1,5 @@
 *** To Run: ***
+
 git clone 
 
 cd react-prototype
@@ -8,6 +9,7 @@ npm install -D tailwindcss postcss autoprefixer
 npm run dev
 
 ****************
+
 ctrl click local host link
 
 
