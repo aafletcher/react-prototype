@@ -1,3 +1,12 @@
+*** To Run: ***
+git clone 
+cd react-prototype
+npm install -D tailwindcss postcss autoprefixer
+npm run dev
+****************
+ctrl click local host link
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
