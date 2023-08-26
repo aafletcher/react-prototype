@@ -1,18 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import Navbar from './components/Navbar'
+import Login from './components/Login'
 import MainPage from './components/MainPage'
+import Navbar from './components/Navbar'
 
 function App() {
-
-  return (
-    <div className="flex-auto w-full">
-      <Navbar />
-      <MainPage />
-    </div>
-  )
-}
+    return (
+      <>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </>
+    )
+  }
 
 export default App
