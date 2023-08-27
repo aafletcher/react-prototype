@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Login = () => {
+const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -19,15 +19,15 @@ const Login = () => {
           Sign Up for <span className="text-blue-500">Free</span></h2>
           <div className="border-solid border-slate-400 border-1 border-rounded shadow-xl m-5 bg-white w-[30%]">
            <div className="flex p-0 mb-10 w-full">
-              <div className="w-6/12 py-2 m-0">
-                <p className="text-xl text-center font-bold">Login</p>
-              </div>
               <div className="flex bg-gray-200 w-6/12 py-2 m-0 justify-center">
-                <Link to="/signup" className="w-full text-center text-xl">Sign Up</Link>
+                <Link to="/login" className="w-full text-center text-xl font-bold">Login</Link>
+              </div>
+              <div className="w-6/12 py-2 m-0">
+              <p className="text-xl text-center">Sign Up</p>
               </div>
             </div>
             <form onSubmit={handleSubmit}>
-              <div className="justify-center items-center flex">
+                <div className="justify-center items-center flex">
                     <input type="text" name="Email" value={email} 
                     onChange={(e)=>setEmail(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-10/12 h-16"></input>
                 </div>
@@ -36,7 +36,7 @@ const Login = () => {
                     onChange={(e)=>setPassword(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-10/12 h-16"></input>
                 </div>
                 <div className="justify-center items-center flex">
-                    <input type="submit" value="Login" 
+                    <input type="submit" value="Sign Up" 
                     className="border-1 border-gray-200 rounded-2xl bg-[#2699FB] text-white font-bold px-3 py-1 m-5 w-5/12 h-16"></input>
                 </div>
             </form>
@@ -46,4 +46,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Signup
