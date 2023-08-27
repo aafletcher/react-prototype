@@ -4,6 +4,8 @@ import Login from './components/Login'
 import MainPage from './components/MainPage'
 import Navbar from './components/Navbar'
 import Signup from './components/Signup'
+import EnterDetails from './components/EnterDetails'
+import Welcome from './components/Welcome'
 
 function App() {
     return (
@@ -13,6 +15,8 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/enterDetails" element={<EnterDetails />} />
+          <Route path="/welcome" element={<Welcome />} />
         </Routes>
       </>
     )

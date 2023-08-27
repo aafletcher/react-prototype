@@ -8,7 +8,7 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`The email and password you entered was: ${email}, ${password}`)
+    window.location.href = "/welcome";
   }
 
   return (

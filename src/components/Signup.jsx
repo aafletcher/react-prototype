@@ -1,14 +1,26 @@
 import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+//import { useHistory } from 'react-router-dom'
 
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  //const history = useHistory();
+
+  const validDetails = () => {
+    return true
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`The email and password you entered was: ${email}, ${password}`)
+    //history.push("/enterDetails");
+    if (validDetails) {
+      window.location.href = "/enterDetails";
+    }
+    else {
+      alert(`The Email and Password you entered were invalid: ${email}, ${password}`);
+    }
   }
 
   return (
