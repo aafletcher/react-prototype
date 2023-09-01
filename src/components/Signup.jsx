@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  //const history = useHistory();
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const validDetails = () => {
     return true
@@ -40,12 +40,21 @@ const Signup = () => {
             </div>
             <form onSubmit={handleSubmit}>
                 <div className="justify-center items-center flex">
-                    <input type="text" name="Email" value={email} 
+                    <input type="text" name="Email" value={email} placeholder="Email"
                     onChange={(e)=>setEmail(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-10/12 h-16"></input>
                 </div>
                 <div className="justify-center items-center flex">
-                    <input type="text" name="Password" value={password} 
+                    <input type="password" name="Password" value={password} placeholder="Password"
                     onChange={(e)=>setPassword(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-10/12 h-16"></input>
+                </div>
+                <div className="justify-center items-center flex">
+                    <input type="password" name="Password" value={confirmPassword} placeholder="Confirm Password"
+                    onChange={(e)=>setConfirmPassword(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-10/12 h-16"></input>
+                </div>
+                <div className="justify-center items-center flex">
+                  <p className="m-2 w-full text-xs text-center">
+                    By signing up I agree to the <span className="text-blue-500">Terms of Service</span> and <span className="text-blue-500">Privacy Policy</span> 
+                  </p>
                 </div>
                 <div className="justify-center items-center flex">
                     <input type="submit" value="Sign Up" 

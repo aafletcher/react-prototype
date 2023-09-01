@@ -12,7 +12,7 @@ const Navbar = () => {
                 <Link to="/">Main Page</Link>
             </li>
             <li className="mr-10">
-                About Us
+                <Link to="/">About Us</Link>
             </li>
             <li className="mr-10">
                 API
