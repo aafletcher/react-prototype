@@ -28,11 +28,11 @@ const Login = () => {
             </div>
             <form onSubmit={handleSubmit}>
               <div className="justify-center items-center flex">
-                    <input type="text" name="Email" value={email} 
+                    <input type="text" name="Email" value={email} placeholder="Email" 
                     onChange={(e)=>setEmail(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-10/12 h-16"></input>
                 </div>
                 <div className="justify-center items-center flex">
-                    <input type="text" name="Password" value={password} 
+                    <input type="password" name="Password" value={password} placeholder="Password"
                     onChange={(e)=>setPassword(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-10/12 h-16"></input>
                 </div>
                 <div className="justify-center items-center flex">

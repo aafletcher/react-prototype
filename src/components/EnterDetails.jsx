@@ -3,10 +3,10 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const EnterDetails = () => {
-  const [firstName, setFirstName] = useState("First Name");
-  const [lastName, setLastName] = useState("Last Name");
-  const [age, setAge] = useState("Age");
-  const [gender, setGender] = useState("Gender");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [age, setAge] = useState("");
+  const [gender, setGender] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -24,21 +24,23 @@ const EnterDetails = () => {
             </div>
             <form onSubmit={handleSubmit}>
                 <div className="justify-center items-center flex">
-                    <input type="text" name="FirstName" value={firstName} 
-                    onChange={(e)=>setFirstName(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-10/12 h-16 indent-2 text-slate-400"></input>
+                    <input type="text" name="FirstName" value={firstName} placeholder="First Name"
+                    onChange={(e)=>setFirstName(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-10/12 h-16 indent-2"></input>
                 </div>
                 <div className="justify-center items-center flex">
-                    <input type="text" name="LastName" value={lastName} 
-                    onChange={(e)=>setLastName(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-10/12 h-16 indent-2 text-slate-400"></input>
+                    <input type="text" name="LastName" value={lastName} placeholder="Last Name"
+                    onChange={(e)=>setLastName(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-10/12 h-16 indent-2"></input>
                 </div>
-                <div className="flex">
-                  <div className="justify-center items-center flex">
-                    <input type="text" name="Age" value={age} 
-                      onChange={(e)=>setAge(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-10/12 h-16 indent-2 text-slate-400"></input>
-                  </div>
-                  <div className="justify-center items-center flex">
-                    <input type="text" name="Gender" value={gender} 
-                      onChange={(e)=>setGender(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-10/12 h-16 indent-2 text-slate-400"></input>
+                <div className="flex items-center justify-center">
+                  <div className="w-11/12 flex">
+                    <div className="w-2/12 mx-2">
+                      <input type="text" name="Age" value={age} placeholder="Age"
+                        onChange={(e)=>setAge(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-11/12 h-16 indent-2"></input>
+                    </div>
+                    <div className="w-4/12 mx-2">
+                      <input type="text" name="Gender" value={gender} placeholder="Gender"
+                        onChange={(e)=>setGender(e.target.value)} className="border-2 border-gray-200 rounded-xl m-2 w-11/12 h-16 indent-2"></input>
+                    </div>
                   </div>
                 </div>
                 <div className="justify-center items-center flex">
