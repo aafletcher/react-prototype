@@ -10,7 +10,7 @@ import Welcome from './components/Welcome'
 function App() {
     return (
       <>
-        <Navbar />
+        <Navbar isLoggedIn={false}/>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/login" element={<Login />} />
