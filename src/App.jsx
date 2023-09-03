@@ -1,3 +1,10 @@
+/*
+Purpose: provide the routing for the website, 
+and renders the navbar, which determines what page to show
+Author: Luka Mitchell and Akira Fletcher.
+Creation Date: 25th Aug.
+*/
+
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Login from './components/Login'
@@ -8,18 +15,18 @@ import EnterDetails from './components/EnterDetails'
 import Welcome from './components/Welcome'
 
 function App() {
-    return (
-      <>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/enterDetails" element={<EnterDetails />} />
-          <Route path="/welcome" element={<Welcome />} />
-        </Routes>
-      </>
-    )
-  }
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/enterDetails" element={<EnterDetails />} />
+        <Route path="/welcome" element={<Welcome />} />
+      </Routes>
+    </>
+  )
+}
 
 export default App

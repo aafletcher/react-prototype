@@ -1,3 +1,9 @@
+/*
+Purpose: the root for the website; calls App.
+Author: Luka Mitchell and Akira Fletcher.
+Creation Date: 25th Aug.
+*/
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
