@@ -15,9 +15,14 @@ import EnterDetails from './components/EnterDetails'
 import Welcome from './components/Welcome'
 
 function App() {
+  const [isSignedIn, setIsSignedIn] = useState(False);
+  const childToParent = (childIsSignedIn) => {
+    setIsSignedIn(childIsSignedIn);
+  }
+
   return (
     <>
-      <Navbar />
+      <Navbar childToPArent={childToParent}/>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/login" element={<Login />} />

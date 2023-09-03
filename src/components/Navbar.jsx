@@ -7,7 +7,8 @@ Creation Date: 25th Aug
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({childToParent}) => {
+  const isSignedIn = False;
   return (
     /* Navbar with items linking to other pages*/
     <nav className="w-full flex p-6 jutsify-between items-center border-b-2 
@@ -15,7 +16,7 @@ const Navbar = () => {
       <ul className="list-none sm:flex hidden justify-start items-center 
       flex-1">
         <li className="mr-20">
-          <Link to="/">Logo</Link>
+          <Link to="/" onClick={() => childToParent(isSignedIn)}>Logo</Link>
         </li>
         <li className="mr-10">
           <Link to="/">Main Page</Link>
