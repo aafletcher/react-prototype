@@ -8,15 +8,33 @@ Creation Date: 27th Aug.
 import React from 'react'
 import { useState } from 'react'
 
-const EnterDetails = () => {
+const EnterDetails = (props) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [age, setAge] = useState("");
   const [gender, setGender] = useState("");
+  const email = props.email;
+  const password = props.password;
+  const confirmPassword = props.confirmPassword;
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    window.location.href = "/welcome";
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ title: 'React POST Request Example', 
+                             email: email,
+                             password: password,
+                             confirmPassword: confirmPassword,
+                             firstName: firstName,
+                             lastName: lastName,
+                             age: age,
+                             gender: gender})
+    };
+    fetch("http://localhost:3030/posts", requestOptions)
+      .then(response => response.json())
+      .then(data => this.setState({ postId: data.id }));
+      window.location.href = "/welcome";    
   }
 
   return (

@@ -10,9 +10,9 @@ import './App.css'
 import Login from './pages/Login'
 import MainPage from './pages/MainPage'
 import Navbar from './components/Navbar'
-import Signup from './components/Signup'
+import Signup from './pages/Signup'
 import EnterDetails from './pages/EnterDetails'
-import Welcome from './components/Welcome'
+import Welcome from './pages/Welcome'
 import HomePage from './pages/HomePage'
 
 function App() {
