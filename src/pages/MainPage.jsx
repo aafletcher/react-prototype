@@ -6,11 +6,9 @@ Creation Date: 25th Aug.
 */
 
 import React from 'react'
-import PhotoCards from './PhotoCards'
+import PhotoCards from '../components/PhotoCards'
 
-const MainPage = () => {
-
-  
+const MainPage = () => {  
   return (
     <div className="w-full justify-center items-center p-6 bg-green-100">
       <div className="w-6/12 translate-x-2/4"> 

@@ -78,7 +78,7 @@ const Signup = () => {
               placeholder="Confirm Password"
               onChange={(e)=>setConfirmPassword(e.target.value)} 
               className="border-2 border-gray-200 rounded-xl m-2 
-              w-10/12 h-16 "></input>
+              w-10/12 h-16 indent-2"></input>
             </div>
             <div className="justify-center items-center flex">
               <p className="m-2 w-full text-xs text-center">

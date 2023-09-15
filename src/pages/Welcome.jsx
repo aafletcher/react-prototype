@@ -8,9 +8,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Welcome = () => {
+
   const handleClick = () => {
     /* To be further implemented in the future */
-    alert('Still In Developement');
+    window.location.href = "/";    
   }
 
   return (
