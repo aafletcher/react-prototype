@@ -34,12 +34,14 @@ const Navbar = (props) => {
       flex-1">
         <li className="mr-10 bg-blue-400 px-3 py-2 border-rounded 
         rounded-lg text-white">
-          Upload Memory
+          {!props.isLoggedIn && <Link to="/login">Upload Memory</Link>}
+          {props.isLoggedIn && <Link to="/upload">Upload Memory</Link>}
         </li>
-        <li className="mr-0 border-2 border-slate-300 px-3 py-2 
-        border-rounded rounded-lg">
+        <li 
+        className="mr-0 border-2 border-slate-300 px-3 py-2 
+        border-rounded rounded-lg ">
           {!props.isLoggedIn && <Link to="/login">Login/Sign Up</Link>}
-          {props.isLoggedIn && <Link to="/login">asdsa</Link>}
+          {props.isLoggedIn && <Link to="/home">My Memories</Link>}
         </li>
       </ul>
     </nav>

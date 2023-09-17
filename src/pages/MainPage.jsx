@@ -10,7 +10,7 @@ import PhotoCards from '../components/PhotoCards'
 
 const MainPage = () => {  
   return (
-    <div className="w-full justify-center items-center p-6 bg-green-100">
+    <div className="w-full justify-center items-center p-6 bg-green-50">
       <div className="w-6/12 translate-x-2/4"> 
         <h1 className="font-serif text-center p-5 text-2xl w-full">
         Create the most personalized digital album that holds your memories.

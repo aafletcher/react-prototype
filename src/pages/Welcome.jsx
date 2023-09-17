@@ -11,7 +11,7 @@ const Welcome = () => {
 
   const handleClick = () => {
     /* To be further implemented in the future */
-    window.location.href = "/";    
+    window.location.href = "/home";    
   }
 
   return (

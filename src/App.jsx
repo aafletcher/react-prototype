@@ -10,22 +10,26 @@ import './App.css'
 import Login from './pages/Login'
 import MainPage from './pages/MainPage'
 import Navbar from './components/Navbar'
-import Signup from './components/Signup'
+import Signup from './pages/Signup'
 import EnterDetails from './pages/EnterDetails'
-import Welcome from './components/Welcome'
+import Welcome from './pages/Welcome'
 import HomePage from './pages/HomePage'
+import ViewMemory from './pages/ViewMemory'
+import UploadMemory from './pages/UploadMemory'
 
 function App() {
     return (
     <>
-      <Navbar isLoggedIn={false}/>
+      <Navbar isLoggedIn={true}/>
       <Routes>
+        <Route path="/view" element={<ViewMemory />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/" element={<MainPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/enterDetails" element={<EnterDetails />} />
         <Route path="/welcome" element={<Welcome />} />
+        <Route path="/upload" element={<UploadMemory />} />
       </Routes>
     </>
   )

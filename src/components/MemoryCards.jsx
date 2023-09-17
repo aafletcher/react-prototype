@@ -3,7 +3,7 @@ import React from 'react'
 const MemoryCards = (props) => {
   if (props.url != "") {
     return (
-        <div className="w-full px-14 border-4 rounded-2xl p-5">
+        <button onClick={props.onClick} className="w-full px-14 border-4 rounded-2xl p-5 bg-white">
           <div className="w-full p-3 py-5">
             <img 
             className="border-2 border-rounded rounded-xl w-[32rem] h-[16rem] 
@@ -28,15 +28,15 @@ const MemoryCards = (props) => {
                 <p>Brief Description</p>
             </div>
           </div>
-        </div>
+        </button>
       )
   } else {
     return (
-        <div className="w-full px-14 border-4 rounded-2xl p-5 flex justify-center items-center">
+        <button onClick={props.onClick} className="w-full px-14 border-4 rounded-2xl p-5 flex justify-center items-center bg-white">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-64">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
             </svg>
-        </div>
+        </button>
       )
   }
   
