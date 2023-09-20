@@ -3,7 +3,8 @@ import React from 'react'
 const MemoryCards = (props) => {
   if (props.url != "") {
     return (
-        <button onClick={props.onClick} className="w-full px-14 border-4 rounded-2xl p-5 bg-white">
+        <button onClick={props.onClick} className="w-full px-14 border-4 
+        rounded-2xl p-5 bg-white mb-10 md:mb-0">
           <div className="w-full p-3 py-5">
             <img 
             className="border-2 border-rounded rounded-xl w-[32rem] h-[16rem] 

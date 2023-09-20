@@ -3,7 +3,8 @@ import MemoryButton from './MemoryButton'
 
 const MemoryNav = () => {
   return (
-    <div className="bg-green-300 w-6/12 px-6 py-3 text-center rounded-xl flex">
+    <div className="hidden md:flex bg-green-300 px-6 py-3 text-center rounded-xl flex w-full 
+    md:w-6/12">
         <MemoryButton text="All" selected={true} />
         <MemoryButton text="Image" selected={false} />
         <MemoryButton text="Video" selected={false} />
