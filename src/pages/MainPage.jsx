@@ -8,19 +8,19 @@ Creation Date: 25th Aug.
 import React from 'react'
 import PhotoCards from '../components/PhotoCards'
 
-const MainPage = () => {  
+const MainPage = () => {
   return (
     <div className="w-full justify-center items-center p-6 bg-green-50">
-      <div className="w-6/12 translate-x-2/4"> 
-        <h1 className="font-serif text-center p-5 text-2xl w-full">
+      <div className="w-full md:w-6/12 md:translate-x-2/4"> 
+        <h1 className="font-serif text-center p-5 w-full text-lg md:text-2xl">
         Create the most personalized digital album that holds your memories.
         </h1>
       </div>
-      <p className="font-serif text-center p-5">
+      <p className="font-serif text-center p-5 text-sm md:text-lg">
       Upload any form of files to start creating your collection of memories, 
       we support many forms of media.
       </p>
-      <div className="flex justify-center items-center">
+      <div className="block md:flex justify-center items-center">
         <PhotoCards 
         url="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Compact_disc_album.jpg/1200px-Compact_disc_album.jpg"
         alt="album cd" 
