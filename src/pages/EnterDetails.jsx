@@ -23,7 +23,7 @@ const EnterDetails = () => {
     <div className="justify-center items-center p-5 h-screen">
       <div className="flex items-center flex-col p-3">
         <div className="border-solid border-slate-400 border-1 border-rounded 
-        shadow-xl m-5 bg-white w-[30%]">
+        shadow-xl m-5 bg-white w-full md:w-[30%]">
           <div className="flex p-0 mb-10 w-full">
             <div className="w-full py-2 m-0">
               <p className="text-xl text-center">Sign Up</p>

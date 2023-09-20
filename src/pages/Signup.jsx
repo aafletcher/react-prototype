@@ -33,12 +33,14 @@ const Signup = () => {
   return (
     <div className="justify-center items-center p-5 h-screen">
       <div className="flex items-center flex-col p-3">
-        <h1 className="text-4xl p-3 font-bold p-3">Login with your account</h1>
+        <h1 className="p-3 font-bold p-3 text-2xl md:text-4xl">
+          Login with your account
+        </h1>
         <h2 className="text-lg text-center p-3 text-slate-500 font-normal 
         leading-8">Or<br></br>
         Sign Up for <span className="text-blue-500">Free</span></h2>
         <div className="border-solid border-slate-400 border-1 border-rounded 
-        shadow-xl m-5 bg-white w-[30%]">
+        shadow-xl m-5 bg-white w-full md:w-[30%]">
           <div className="flex p-0 mb-10 w-full">
             <div className="flex bg-gray-200 w-6/12 py-2 m-0 justify-center">
               <Link to="/login" className="w-full text-center text-xl 
@@ -83,9 +85,9 @@ const Signup = () => {
             <div className="justify-center items-center flex">
               <p className="m-2 w-full text-xs text-center">
                 By signing up I agree to the 
-                <span className="text-blue-500">Terms of Service</span>
+                <span className="text-blue-500"> Terms of Service </span>
                 and
-                <span className="text-blue-500">Privacy Policy</span> 
+                <span className="text-blue-500"> Privacy Policy </span> 
               </p>
             </div>
             <div className="justify-center items-center flex">

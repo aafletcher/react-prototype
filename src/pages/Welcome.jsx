@@ -18,7 +18,7 @@ const Welcome = () => {
     <div className="justify-center items-center p-5 h-screen">
       <div className="flex items-center flex-col p-3 h-full">
         <div className="border-solid border-slate-400 border-1 border-rounded 
-        shadow-xl m-5 bg-white w-[30%]">
+        shadow-xl m-5 bg-white w-full md:w-[30%]">
           <div className="flex p-0 mb-10 w-full justify-center 
           place-items-center flex">
             <h1 className="m-2 w-10/12 h-32 text-center text-2xl 

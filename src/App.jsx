@@ -17,7 +17,7 @@ import HomePage from './pages/HomePage'
 import ViewMemory from './pages/ViewMemory'
 import UploadMemory from './pages/UploadMemory'
 
-function App() {
+function App() {  
     return (
     <>
       <Navbar isLoggedIn={true}/>

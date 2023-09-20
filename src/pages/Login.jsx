@@ -21,7 +21,7 @@ const Login = () => {
   return (
     <div className="justify-center items-center p-5 h-screen">
       <div className="flex items-center flex-col p-3">
-        <h1 className="text-4xl p-3 font-bold p-3">
+        <h1 className="p-3 font-bold p-3 text-2xl md:text-4xl">
         Login with your account
         </h1>
         <h2 
@@ -32,7 +32,7 @@ const Login = () => {
         <span className="text-blue-500"> Free</span>
         </h2>
         <div className="border-solid border-slate-400 border-1 border-rounded 
-        shadow-xl m-5 bg-white w-[30%]">
+        shadow-xl m-5 bg-white w-full md:w-[30%]">
           <div className="flex p-0 mb-10 w-full">
             <div className="w-6/12 py-2 m-0">
               <p className="text-xl text-center font-bold">Login</p>
