@@ -16,6 +16,9 @@ import Welcome from './pages/Welcome'
 import HomePage from './pages/HomePage'
 import ViewMemory from './pages/ViewMemory'
 import UploadMemory from './pages/UploadMemory'
+import AdminHome from './pages/AdminHome'
+import TimeLine from './pages/TimeLinePage'
+import TimeLinePage2 from './pages/TimeLinePage2'
 
 function App() {  
     return (
@@ -30,6 +33,9 @@ function App() {
         <Route path="/enterDetails" element={<EnterDetails />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/upload" element={<UploadMemory />} />
+        <Route path="/admin" element={<AdminHome />} />
+        <Route path="/timeline" element={<TimeLine />} />
+        <Route path="/timeline2" element={<TimeLinePage2 />} />
       </Routes>
     </>
   )

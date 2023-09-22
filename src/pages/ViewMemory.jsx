@@ -23,7 +23,7 @@ const ViewMemory = (props) => {
 
   return (
     <div className="w-full items-center justify-center p-5 bg-green-50 h-screen">
-      <div className="w-full md:w-full md:h-2/3 px-10 justify-center py-5">
+      <div className="w-full h-2/3 px-10 justify-center py-5">
         <img 
         className="border-2 drop-shadow-md rounded-3xl w-full h-full 
         bg-white object-contain"

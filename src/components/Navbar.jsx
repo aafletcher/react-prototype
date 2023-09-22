@@ -42,8 +42,7 @@ const Navbar = (props) => {
             <Link to="/">About Us</Link>
           </li>
           <li className="mr-10">
-            {!menuOpen && <p>Closed</p>}
-            {menuOpen && <p>Opened</p>}
+            API
           </li>
           <li className="mr-10">
             VR
