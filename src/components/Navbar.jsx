@@ -19,8 +19,8 @@ const Navbar = (props) => {
 
   return (
     /*Navbar with items linking to other pages*/
-    <nav className="flex-grow w-full p-6 md:flex justify-between items-center border-b-2border-slate-500 shadow-xl">
-      <button className="hidden md:block">
+    <nav className="flex-grow w-full p-6 md:flex border-b-2 border-slate-500 shadow-xl">
+      <button className="hidden md:block mr-10">
             <Link to="/">Logo</Link>
         </button>
       <div className="flex justify-between md:hidden">
@@ -33,32 +33,36 @@ const Navbar = (props) => {
           </svg>
         </button>
       </div>
-      <div className={(menuOpen ? 'block' : 'hidden') + " md:flex"}>
-        <ul className="list-none justify-start items-center sm:flex">
-          <li className="mr-10">
-            <Link to="/">Main Page</Link>
-          </li>
-          <li className="mr-10">
-            <Link to="/">About Us</Link>
-          </li>
-          <li className="mr-10">
-            API
-          </li>
-          <li className="mr-10">
-            VR
-          </li>
-        </ul>
-        <ul className="list-none justify-end items-center sm:flex">
-          <li className="mr-10 text-blue-400 md:mr-10 md:bg-blue-400 md:px-3 md:py-2 md:border-rounded md:rounded-lg md:text-white">
-            {!props.isLoggedIn && <Link to="/login">Upload Memory</Link>}
-            {props.isLoggedIn && <Link to="/upload">Upload Memory</Link>}
-          </li>
-          <li 
-          className="mr-0 text-slate-600 md:mr-0 md:border-2 md:border-slate-300 md:px-3 md:py-2 md:border-rounded md:rounded-lg md:text-black">
-            {!props.isLoggedIn && <Link to="/login">Login/Sign Up</Link>}
-            {props.isLoggedIn && <Link to="/home">My Memories</Link>}
-          </li>
-        </ul>
+      <div className={(menuOpen ? 'block' : 'hidden') + " md:flex w-full"}>
+        <div className="justify-start items-center flex w-1/2">
+          <ul className="list-none items-center sm:flex">
+            <li className="mr-8">
+              <Link to="/">Main Page</Link>
+            </li>
+            <li className="mr-8">
+              <Link to="/">About Us</Link>
+            </li>
+            <li className="mr-8">
+              API
+            </li>
+            <li className="mr-8">
+              VR
+            </li>
+          </ul>
+        </div>
+        <div className="justify-end items-center flex w-1/2">
+          <ul className="list-none sm:flex">
+            <li className="mr-9 text-blue-400 md:bg-blue-400 md:px-3 md:py-2 md:border-rounded md:rounded-lg md:text-white">
+              {!props.isLoggedIn && <Link to="/login">Upload Memory</Link>}
+              {props.isLoggedIn && <Link to="/upload">Upload Memory</Link>}
+            </li>
+            <li 
+            className="mr-0 text-slate-600 md:mr-0 md:border-2 md:border-slate-300 md:px-3 md:py-2 md:border-rounded md:rounded-lg md:text-black">
+              {!props.isLoggedIn && <Link to="/login">Login/Sign Up</Link>}
+              {props.isLoggedIn && <Link to="/home">My Memories</Link>}
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   )

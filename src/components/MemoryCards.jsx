@@ -16,7 +16,7 @@ const MemoryCards = (props) => {
           <div className="p-3">
             <div className="flex items-end">
                 <div className="w-10/12">
-                    <h2 className="text-4xl">Title</h2>
+                    <h2 className="text-4xl text-left">Title</h2>
                 </div>
                 <div className="w-2/12">
                     <p>Date</p>
@@ -26,7 +26,7 @@ const MemoryCards = (props) => {
                 <hr className="h-2"></hr>
             </div>
             <div>
-                <p>Brief Description</p>
+                <p className="text-left">Brief Description</p>
             </div>
           </div>
         </button>
