@@ -19,7 +19,8 @@ const Navbar = (props) => {
 
   return (
     /*Navbar with items linking to other pages*/
-    <nav className="flex-grow w-full p-6 md:flex border-b-2 border-slate-500 shadow-xl">
+    <nav className="flex-grow w-full p-6 md:flex border-b-2 border-slate-500 
+    shadow-xl">
       <button className="hidden md:block mr-10">
             <Link to="/">Logo</Link>
         </button>
@@ -28,8 +29,17 @@ const Navbar = (props) => {
             <Link to="/">Logo</Link>
         </button>
         <button onClick={toggleMenu}>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={(menuOpen ? 'block' : 'block') + " w-6 h-6 float-right"}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          fill="none" 
+          viewBox="0 0 24 24" 
+          strokeWidth={1.5} 
+          stroke="currentColor" 
+          className={(menuOpen ? 'block' : 'block') + " w-6 h-6 float-right"}>
+            <path 
+            strokeLinecap="round" 
+            strokeLinejoin="round" 
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
       </div>

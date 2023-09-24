@@ -1,6 +1,5 @@
 /*
-Purpose: provide the main webpage where users can click to signup/login,
-then browse their photocards
+Purpose: provide the main webpage where users can click to signup/login
 Author: Luka Mitchell and Akira Fletcher.
 Creation Date: 25th Aug.
 */

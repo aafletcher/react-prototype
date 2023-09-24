@@ -1,3 +1,9 @@
+/*
+Purpose: home page after logging in, shows users memories
+Author: Luka Mitchell and Akira Fletcher
+Creation Date: 15th Sep
+*/
+
 import React from 'react'
 import MemoryCards from '../components/MemoryCards'
 import MemoryNav from '../components/MemoryNav'
@@ -18,7 +24,8 @@ const HomePage = () => {
             <MemoryNav />
         </div>
         <div className="flex items-center justify-center">
-            <div className="block pb-5 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-20">
+            <div className="block pb-5 md:grid md:grid-cols-2 md:grid-rows-2 
+            md:gap-20">
                 <MemoryCards 
                 url="https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg"
                 alt="card1"

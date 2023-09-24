@@ -1,3 +1,9 @@
+/*
+Purpose: element of the timeline feature where users can select memories by date
+Author: Luka Mitchell and Akira Fletcher
+Creation Date: 22th Sep
+*/
+
 import React from 'react'
 
 const TimeLineLine = () => {

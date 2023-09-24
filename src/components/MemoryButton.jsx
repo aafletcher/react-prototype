@@ -1,3 +1,9 @@
+/*
+Purpose: Button used for filtering memories
+Author: Luka Mitchell and Akira Fletcher
+Creation Date: 15th Sep
+*/
+
 import React from 'react'
 
 const MemoryButton = (props) => {
