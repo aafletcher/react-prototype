@@ -22,7 +22,8 @@ const ViewMemory = (props) => {
   }
 
   return (
-    <div className="w-full items-center justify-center p-5 bg-green-50 h-screen">
+    <div className="w-full items-center justify-center p-5 bg-green-50 
+    h-screen">
       <div className="w-full h-2/3 px-10 justify-center py-5">
         <img 
         className="border-2 drop-shadow-md rounded-3xl w-full h-full 
@@ -34,15 +35,18 @@ const ViewMemory = (props) => {
       <div className="flex px-10 w-100%">
         <>
           <span className="w-1/2">
-            <p className="float-left bg-white border-2 drop-shadow-md rounded-2xl px-3">Date: {date}</p>
+            <p className="float-left bg-white border-2 drop-shadow-md 
+            rounded-2xl px-3">Date: {date}</p>
           </span>
           <span className="w-1/2">
-            <p className="float-right bg-white border-2 drop-shadow-md rounded-2xl px-3">Location: {location}</p>
+            <p className="float-right bg-white border-2 drop-shadow-md 
+            rounded-2xl px-3">Location: {location}</p>
           </span>
         </>
       </div>
       <div className="h-1/3 px-10 py-5">
-          <p className="h-full bg-white border-2 drop-shadow-md rounded-2xl px-3">{descr}</p>
+          <p className="h-full bg-white border-2 drop-shadow-md 
+          rounded-2xl px-3">{descr}</p>
         </div>
     </div>
   )

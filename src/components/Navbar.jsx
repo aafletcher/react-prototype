@@ -62,12 +62,15 @@ const Navbar = (props) => {
         </div>
         <div className="justify-end items-center flex w-1/2">
           <ul className="list-none sm:flex">
-            <li className="mr-9 text-blue-400 md:bg-blue-400 md:px-3 md:py-2 md:border-rounded md:rounded-lg md:text-white">
+            <li className="mr-9 text-blue-400 md:bg-blue-400 md:px-3 md:py-2 
+            md:border-rounded md:rounded-lg md:text-white">
               {!props.isLoggedIn && <Link to="/login">Upload Memory</Link>}
               {props.isLoggedIn && <Link to="/upload">Upload Memory</Link>}
             </li>
             <li 
-            className="mr-0 text-slate-600 md:mr-0 md:border-2 md:border-slate-300 md:px-3 md:py-2 md:border-rounded md:rounded-lg md:text-black">
+            className="mr-0 text-slate-600 md:mr-0 md:border-2 
+            md:border-slate-300 md:px-3 md:py-2 md:border-rounded md:rounded-lg 
+            md:text-black">
               {!props.isLoggedIn && <Link to="/login">Login/Sign Up</Link>}
               {props.isLoggedIn && <Link to="/home">My Memories</Link>}
             </li>

@@ -18,13 +18,16 @@ const UploadMemory = () => {
 
   return (
     <div className="w-full justify-center flex p-5 bg-green-50 h-full">
-      <div className="w-2/3 h-full px-10 items-center float-center py-5 bg-white border-2 rounded-2xl">
+      <div className="w-2/3 h-full px-10 items-center float-center py-5 
+      bg-white border-2 rounded-2xl">
         <MemoryImage 
         url={url}
         alt={alt}>
         </MemoryImage>
         <div className="py-2 flex items-center justify-center">
-          <p className="h-full justify-center">Click on the + to upload a new memory</p>
+          <p className="h-full justify-center">
+            Click on the + to upload a new memory
+          </p>
         </div>
         <form className="pb-0 h-full mb-0">
           <>
@@ -35,7 +38,8 @@ const UploadMemory = () => {
               value={date} 
               placeholder="Enter Date"
               onChange={(e)=>setDate(e.target.value)}
-              className="float-left bg-white border-2 drop-shadow-md rounded-2xl px-3">
+              className="float-left bg-white border-2 drop-shadow-md 
+              rounded-2xl px-3">
               </input>
             </span>
             <span className="w-1/2">
@@ -45,7 +49,8 @@ const UploadMemory = () => {
               value={location} 
               placeholder="Enter Location"
               onChange={(e)=>setLocation(e.target.value)}
-              className="float-right bg-white border-2 drop-shadow-md rounded-2xl px-3">
+              className="float-right bg-white border-2 drop-shadow-md 
+              rounded-2xl px-3">
               </input>
             </span>
           </>
@@ -56,7 +61,8 @@ const UploadMemory = () => {
             value={descr} 
             placeholder="Enter Description"
             onChange={(e)=>setDescr(e.target.value)}
-            className="w-full h-20 bg-white border-2 drop-shadow-md rounded-2xl px-3">
+            className="w-full h-20 bg-white border-2 drop-shadow-md 
+            rounded-2xl px-3">
             </textarea>
           </div>
           <div className="justify-center items-center pb-0 h-10 flex">
