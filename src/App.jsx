@@ -6,6 +6,7 @@ Creation Date: 25th Aug.
 */
 
 import { Routes, Route } from 'react-router-dom'
+import { useState } from 'react'
 import './App.css'
 import Login from './pages/Login'
 import MainPage from './pages/MainPage'
@@ -21,9 +22,21 @@ import TimeLine from './pages/TimeLinePage'
 import TimeLinePage2 from './pages/TimeLinePage2'
 
 function App() {  
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const updateLogin = (newValue) => {
+    setIsLoggedIn(newValue);
+    console.log(isLoggedIn, "app");
+  }
+
+  const getLogin = () => {
+    return isLoggedIn;
+  }
+
     return (
     <>
-      <Navbar isLoggedIn={true}/>
+      <Navbar getLogin={getLogin} update={updateLogin}/>
       <Routes>
         <Route path="/view" element={<ViewMemory />} />
         <Route path="/home" element={<HomePage />} />
@@ -31,7 +44,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/enterDetails" element={<EnterDetails />} />
-        <Route path="/welcome" element={<Welcome />} />
+        <Route path="/welcome" element={<Welcome update={updateLogin}/>} />
         <Route path="/upload" element={<UploadMemory />} />
         <Route path="/admin" element={<AdminHome />} />
         <Route path="/timeline" element={<TimeLine />} />

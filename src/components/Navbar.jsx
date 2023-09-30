@@ -7,6 +7,7 @@ Creation Date: 25th Aug
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import { useEffect } from 'react'
 
 const Navbar = (props) => {
 
@@ -16,6 +17,9 @@ const Navbar = (props) => {
     event.preventDefault();
     setMenuOpen(!menuOpen);
   }
+
+  useEffect (() => {props.update()}, []);
+  
 
   return (
     /*Navbar with items linking to other pages*/
@@ -62,14 +66,17 @@ const Navbar = (props) => {
         </div>
         <div className="justify-end items-center flex w-1/2">
           <ul className="list-none sm:flex">
-            <li className="mr-9 text-blue-400 md:bg-blue-400 md:px-3 md:py-2 md:border-rounded md:rounded-lg md:text-white">
-              {!props.isLoggedIn && <Link to="/login">Upload Memory</Link>}
-              {props.isLoggedIn && <Link to="/upload">Upload Memory</Link>}
+            <li className="mr-9 text-blue-400 md:bg-blue-400 md:px-3 md:py-2 
+            md:border-rounded md:rounded-lg md:text-white">
+              {!props.getLogin() && <Link to="/login">Upload Memory</Link>}
+              {props.getLogin() && <Link to="/upload">Upload Memory</Link>}
             </li>
             <li 
-            className="mr-0 text-slate-600 md:mr-0 md:border-2 md:border-slate-300 md:px-3 md:py-2 md:border-rounded md:rounded-lg md:text-black">
-              {!props.isLoggedIn && <Link to="/login">Login/Sign Up</Link>}
-              {props.isLoggedIn && <Link to="/home">My Memories</Link>}
+            className="mr-0 text-slate-600 md:mr-0 md:border-2 
+            md:border-slate-300 md:px-3 md:py-2 md:border-rounded md:rounded-lg 
+            md:text-black">
+              {!props.getLogin() && <Link to="/login">Login/Sign Up</Link>}
+              {props.getLogin() && <Link to="/home">My Memories</Link>}
             </li>
           </ul>
         </div>

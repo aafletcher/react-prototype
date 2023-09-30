@@ -5,15 +5,23 @@ Creation Date: 27th Aug
 */
 
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+//import { updateIsSignedIn } from '../components/Navbar'
 
-const Welcome = () => {
+const Welcome = (props) => {
+  
+  const [isSignedIn, setIsSignedIn] = useState(false);
 
   const handleClick = () => {
     /* To be further implemented in the future */
-    window.location.href = "/home";    
+    console.log(isSignedIn, "welcome1");
+    setIsSignedIn(!isSignedIn);
+    console.log(isSignedIn, "welcome2");
+    props.update(isSignedIn);
+    //window.location.href = "/home";    
   }
 
+  
   return (
     <div className="justify-center items-center p-5 h-screen">
       <div className="flex items-center flex-col p-3 h-full">
